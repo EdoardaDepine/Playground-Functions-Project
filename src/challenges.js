@@ -103,3 +103,38 @@ function decode(frase) {
   }
   return frase;
 }
+
+// Desafio 10
+const listaDeTecnologias = ["React", "Jest", "HTML", "CSS", "JavaScript"];
+
+function techList(tech, name) {
+  const newArrayOrdenado = tech.sort();
+  let arrayObjetos = [];
+
+  if (tech.length == 0) {
+    return "Vazio!";
+  }
+
+  for (let i = 0; i < newArrayOrdenado.length; i += 1) {
+    const objeto = {
+      tech: newArrayOrdenado[i],
+      name: name,
+    };
+    arrayObjetos.push(objeto);
+  }
+  return arrayObjetos;
+}
+
+module.exports = {
+  calcArea,
+  catAndMouse,
+  compareTrue,
+  concatName,
+  decode,
+  encode,
+  fizzBuzz,
+  footballPoints,
+  highestCount,
+  splitSentence,
+  techList,
+};
