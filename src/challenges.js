@@ -25,3 +25,25 @@ function concatName(array) {
   const resultado = `${array[array.length - 1]}, ${array[0]}`;
   return resultado;
 }
+
+// Desafio 5
+function footballPoints(wins, ties) {
+  const resultado = wins * 3 + ties * 1;
+  return resultado;
+}
+
+// Desafio 6
+const repeticao1 = [9, 1, 2, 3, 9, 5, 7];
+const repeticao2 = [0, 4, 4, 4, 9, 2, 1];
+const repeticao3 = [0, 0, 0];
+
+function highestCount(array) {
+  let contador = 0;
+  const maiornumero = Math.max(...array);
+  for (let i = 0; i < array.length; i += 1) {
+    if (array[i] === maiornumero) {
+      contador += 1;
+    }
+  }
+  return contador;
+}
