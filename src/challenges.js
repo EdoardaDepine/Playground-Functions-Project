@@ -19,3 +19,9 @@ const foguete = "foguete";
 function splitSentence(parametro) {
   return parametro.split(" ");
 }
+
+// Desafio 4
+function concatName(array) {
+  const resultado = `${array[array.length - 1]}, ${array[0]}`;
+  return resultado;
+}
